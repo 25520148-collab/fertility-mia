@@ -16,7 +16,7 @@ Kết luận dự kiến áp dụng cho corpus, checkpoint, tokenizer và quy tr
 
 ## Bằng chứng cần thu
 
-- **Đã có:** protocol v2.14, bảng tra 32 nguồn, kế hoạch họp nhóm và fixture trên dữ liệu giả.
+- **Đã có:** protocol v2.15, phụ lục 32 nguồn đọc hai chiều (phần việc → bài, bài → vai trò), kế hoạch họp nhóm và fixture trên dữ liệu giả.
 - **Đang chờ xác minh:** notebook pilot, exact split, ledger phơi nhiễm, checkpoint và cache gốc.
 - **Chờ nhóm chốt:** số ngôn ngữ thật của panel, detector primary của RQ1, thang PFR dùng chung, bin `pfr_i` trong ngôn ngữ, panel và liều, quy tắc threshold, ứng viên RQ3. Danh sách M1–M10 ở [phiếu họp](group-meeting.md).
 

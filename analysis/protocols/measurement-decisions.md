@@ -1,16 +1,16 @@
-# Phiếu đo lường · v2.14
+# Phiếu đo lường · v2.15
 
 Dùng cùng [plan](../../plan.md) và [phiếu họp](../../group-meeting.md). Các chính sách cần nhóm ký ở C-final. Đối chiếu source theo [Phụ lục A](literature-application-map.md).
 
 | Mục | Quyết định cần khóa | Đầu ra kiểm được |
 |---|---|---|
 | PFR | Tokenizer revision, text view, gộp cặp, trọng số | Cặp IDs, missing/zero denominators, quantiles, cross-language intersection |
-| RQ1 outcome | AUC(after) hoặc ΔAUC theo câu hỏi, một primary | Cùng eval labels/cases cho before/after, paired CI |
-| RQ1 length | Tập comparable content và sensitivity theo token bins | Support chart, per-class counts, variance PFR còn lại, drop/retention |
+| RQ1 outcome | **Đã chốt trong câu RQ1:** AUROC(after) là primary, `direct` so với `verified family-unexposed`; ΔAUROC là bổ trợ trên cùng mẫu và nhãn. Còn khóa: detector primary (đề xuất Min-K% native) | Cùng eval labels/cases cho before/after, paired CI |
+| RQ1 length | Tập comparable content và sensitivity theo token bins. **Thêm:** bin `pfr_i` trong từng ngôn ngữ, biên chốt trên dev, cho cả RQ1 và RQ2 | Support chart, per-class counts, variance PFR còn lại, drop/retention |
 | RQ1 adjustment | Proxy tiền LoRA, units, weighting, estimation population | Design matrix có rank/support và báo leverage/leave-one-language-out |
 | RQ1 threshold | Score > τ, reference weights, α, minimum positive/negative families, absolute gap | Achieved calibration/test rates và ties, refit trong bootstrap. Bảng per-language có counts |
-| RQ2 | Native baselines, predeclared signed contrast hoặc magnitude contrast có CI phù hợp | Common cases, sign, k, short-text utilization, phi-likelihood feasibility |
-| RQ3 | Một formula khóa trên dev, inference input, minimum coverage, dispersion, q, δ, α | Native/variant scores merged on same IDs. Low-group khóa từ dev, báo CI ghép cặp |
+| RQ2 | **Đã chốt trong câu RQ2:** đầu ra chính là độ dốc theo PFR của chênh AUROC giữa Min-K% và Min-K%++. Còn khóa: signed hay magnitude contrast. Ca kiểm bắt buộc: chênh hằng 0,05 phải cho độ dốc 0 | Common cases, sign, k, short-text utilization, phi-likelihood feasibility |
+| RQ3 | Một formula khóa trên dev, inference input, minimum coverage, dispersion, q, δ, α. **Điều kiện cần:** ví dụ tính tay cho thấy công thức đổi được thứ hạng trong cùng ngôn ngữ. **Phương án lùi:** panel quá ít ngôn ngữ thì chỉ báo theo từng ngôn ngữ | Native/variant scores merged on same IDs. Low-group khóa từ dev, báo CI ghép cặp |
 | Precision | Conditional inference panel hay generalization, estimand, family of tests | Joint resampling và seed-level output, simulation assumptions, Monte Carlo error |
 | Exposure | Dose unit, optimizer-visible text, background, sham và assignment | Manifest theo adapter/checkpoint với actual bytes, tokens, copies, steps |
 

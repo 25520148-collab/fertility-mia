@@ -1,4 +1,4 @@
-# Protocol PFR, support và split · v2.14
+# Protocol PFR, support và split · v2.15
 
 Đặc tả cho [kế hoạch](../../plan.md). [R5, R13, R17 và R21](literature-application-map.md) xác định thước đo, nguồn song song và giới hạn corpus. [Fixture định nghĩa](fixtures.py) dùng dữ liệu tổng hợp.
 
