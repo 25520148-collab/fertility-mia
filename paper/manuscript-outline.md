@@ -1,6 +1,6 @@
 # Khung bản thảo để nhóm cùng viết
 
-Đây là outline làm việc. Dùng [kế hoạch v2.14](../plan.md) cho các lựa chọn thiết kế và [sổ đối chiếu kết luận](claim-ledger.md) để kiểm từng câu định lượng.
+Đây là outline làm việc. Dùng [kế hoạch v2.15](../plan.md) cho các lựa chọn thiết kế và [sổ đối chiếu kết luận](claim-ledger.md) để kiểm từng câu định lượng.
 
 | Phần | Nội dung cần viết | Bằng chứng trước khi chốt |
 |---|---|---|

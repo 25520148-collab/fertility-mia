@@ -1,4 +1,4 @@
-# Phiếu họp nhóm · kế hoạch fertility-mia v2.14
+# Phiếu họp nhóm · kế hoạch fertility-mia v2.15
 
 Đọc trước [kế hoạch](plan.md), [hướng dẫn minh hoạ](analysis/protocols/implementation-guide.md) và hàng RQ phụ trách trong [phụ lục bài báo](analysis/protocols/literature-application-map.md). Dùng 45 phút. Điền tên và quyết định ngay trong biên bản của nhóm sau cuộc họp.
 
@@ -29,7 +29,7 @@
 
 ## Quyết định còn mở sau khi chỉnh RQ (18/11)
 
-Ba câu RQ đã sửa trực tiếp trong [plan §1](plan.md#1-câu-hỏi-và-kết-quả-sẽ-báo-cáo) và đồng bộ ở §3. Mười mục dưới đây **chưa chốt** và chặn các bước tương ứng.
+Ba câu RQ đã sửa trực tiếp trong [plan §1](plan.md#1-câu-hỏi-và-kết-quả-sẽ-báo-cáo) và đồng bộ ở §3. Mười một mục dưới đây **chưa chốt** và chặn các bước tương ứng.
 
 | # | Quyết định còn mở | Chặn gì | Ai quyết / khi nào |
 |---|---|---|---|
@@ -43,6 +43,7 @@ Ba câu RQ đã sửa trực tiếp trong [plan §1](plan.md#1-câu-hỏi-và-k�
 | M8 | **Detector primary của RQ1.** Đề xuất Min-K% native `k = 20%` | Chọn detector sau khi xem số là một dạng chọn kết quả. Chưa chốt thì RQ1 chưa có kết quả chính | Methods · C-final, trước khi xem kết quả |
 | M9 | **Bin `pfr_i` trong ngôn ngữ**: số bin, biên bin chốt trên dev, số mẫu tối thiểu mỗi lớp mỗi bin | Phân tích bổ trợ trong ngôn ngữ của RQ1 và RQ2. Đặc biệt cần nếu panel chỉ có Anh–Trung | Methods · trước confirmatory test |
 | M10 | **Số ngôn ngữ tối thiểu để chạy ba tiêu chí RQ3.** Dưới ngưỡng thì chỉ báo AUROC native và biến thể theo từng ngôn ngữ, đánh dấu RQ3 chưa trả lời | Khi nào RQ3 được coi là đã trả lời | Cả nhóm · C-final |
+| M11 | **Lời đóng góp của nhóm còn viết theo câu RQ cũ.** Ví dụ đóng góp gắn với RQ3 vẫn nói "thu hẹp khoảng cách AUC". Phần lời đóng góp do nhóm sở hữu nên agent không tự sửa | Câu đóng góp trong Introduction và abstract phải khớp ba RQ mới | Cả nhóm · trước W1 |
 
 **Hai mục đã được câu RQ mới chốt, ghi lại để không mở lại:** kết quả chính của RQ1 là **AUROC sau LoRA** (ΔAUROC là bổ trợ trên cùng mẫu và nhãn; chuyển ngưỡng và FPR/TPR ở phần đánh giá riêng), và đầu ra chính của RQ2 là **độ dốc theo PFR của chênh AUROC**, không phải chênh AUROC trung bình.
 

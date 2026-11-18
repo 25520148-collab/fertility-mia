@@ -1,6 +1,6 @@
-# Sổ tay khái niệm theo từng bài · fertility-mia v2.14
+# Sổ tay khái niệm theo từng bài · fertility-mia v2.15
 
-Dùng khi đọc paper hoặc giải thích Method trong buổi họp. Mã R nối với [tên đầy đủ, bài gốc và vị trí](literature-application-map.md). Các định nghĩa dưới đây diễn giải bằng tiếng Việt. Ví dụ ở cuối dùng số giả.
+Dùng khi đọc paper hoặc giải thích Method trong buổi họp. Mã R nối với [tên đầy đủ, bài gốc và vị trí](literature-application-map.md). Các định nghĩa dưới đây diễn giải bằng tiếng Việt. Ví dụ ở cuối dùng số giả. **Mức đọc:** khái niệm giải thích ở đây là kiến thức chung; còn việc một bài *có làm đúng như vậy không* thì theo mức đọc của bài ở [phụ lục](literature-application-map.md#0-mức-đọc-và-quy-tắc-trích). Với các bài mức `AB` (R25–R27, R29, R30, R32), mô tả thiết kế lấy từ ghi chú v2.14 và chưa được mở thân bài để xác nhận.
 
 ## A. Detector và kiểm tập đánh giá
 
