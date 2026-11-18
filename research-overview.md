@@ -2,9 +2,11 @@
 
 ## Câu hỏi
 
-1. **RQ1.** Fertility có tương quan với AUC và calibration sau khi kiểm soát perplexity không?
-2. **RQ2.** Mức ảnh hưởng có khác nhau giữa Min-K%, Min-K%++ và detector không dựa trên likelihood không?
-3. **RQ3.** Detector chuẩn hoá theo fertility có thu hẹp khoảng cách AUC giữa các ngôn ngữ không?
+1. **RQ1.** Trên tập ngôn ngữ và nội dung tương đương được khảo sát, PFR liên hệ thế nào với AUROC của detector khi phân biệt các đoạn thực sự được đưa vào huấn luyện LoRA với các đoạn đối chứng đã xác minh?
+2. **RQ2.** Trên cùng tập mẫu, mối liên hệ giữa PFR và AUROC sau LoRA có khác giữa Min-K% và Min-K%++ không?
+3. **RQ3.** Phương pháp chấm có xét fertility, được chọn trên dev, có giảm chênh lệch AUROC giữa các ngôn ngữ trên cùng tập mẫu đánh giá, đồng thời giữ mức suy giảm AUROC trung bình trong biên đã chốt và cải thiện nhóm ngôn ngữ có AUROC thấp được xác định trên dev không?
+
+**Kết quả chính đã chốt trong câu hỏi.** RQ1 dùng **AUROC sau LoRA**; `ΔAUROC = AUROC_sau − AUROC_0×` là bổ trợ trên cùng mẫu và nhãn; chuyển ngưỡng và FPR/TPR ở phần đánh giá riêng. RQ2 dùng **độ dốc theo PFR của chênh AUROC** giữa hai detector, không phải chênh AUROC trung bình. RQ3 dùng ba tiêu chí và chỉ mở test khi có công thức đổi được thứ hạng trong cùng ngôn ngữ. Nếu panel chỉ có Anh–Trung, kết luận giới hạn ở hai ngôn ngữ đó. Lý do và phép đo ở [kế hoạch §1](plan.md).
 
 ## Thiết kế và phạm vi
 
@@ -16,6 +18,6 @@ Kết luận dự kiến áp dụng cho corpus, checkpoint, tokenizer và quy tr
 
 - **Đã có:** protocol v2.14, bảng tra 32 nguồn, kế hoạch họp nhóm và fixture trên dữ liệu giả.
 - **Đang chờ xác minh:** notebook pilot, exact split, ledger phơi nhiễm, checkpoint và cache gốc.
-- **Chờ nhóm chốt:** outcome chính, panel và liều, quy tắc threshold, phân tích phi-likelihood và ứng viên RQ3.
+- **Chờ nhóm chốt:** số ngôn ngữ thật của panel, detector primary của RQ1, thang PFR dùng chung, bin `pfr_i` trong ngôn ngữ, panel và liều, quy tắc threshold, ứng viên RQ3. Danh sách M1–M10 ở [phiếu họp](group-meeting.md).
 
 Chi tiết ở [kế hoạch](plan.md), [hướng dẫn](analysis/protocols/implementation-guide.md) và [phụ lục bài báo](analysis/protocols/literature-application-map.md).
