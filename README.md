@@ -1,5 +1,7 @@
 # Fertility-MIA
 
+Để làm việc với Claude, mở [prompt nghiên cứu của nhóm](analysis/research-agent-prompt.md), chọn P01, P03/RQ2 hoặc review RQ3 và cung cấp các file ghi trong yêu cầu.
+
 **Tokenizer Fertility as a Confound in Likelihood-Based Contamination Detection**
 
 Dự án nghiên cứu về mối liên hệ giữa số token cần để biểu diễn cùng nội dung bằng nhiều ngôn ngữ và độ nhạy của các detector contamination dựa trên likelihood. Thiết kế hiện hành dùng **phơi nhiễm bổ sung có kiểm soát bằng LoRA**, với nhãn theo từng checkpoint và từng bản văn bản.
